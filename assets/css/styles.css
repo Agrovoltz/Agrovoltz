@@ -385,7 +385,7 @@
   height: 55px;
   width: auto;
   object-fit: contain;
-  transform: scale(1.2);
+  transform: scale(2);
   transition: opacity 0.2s ease;
 }
 

@@ -1,121 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>AgroVoltz</title>
-
-  <!-- Archivo de estilos -->
-  <link rel="stylesheet" href="./assets/css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AgroVoltz | Riego de tomate con energía solar y baterías</title>
+<meta name="description" content="AgroVoltz gestiona paneles solares, baterías y red eléctrica para que el riego de tu tomate no se detenga y cueste hasta un 40% menos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-
 <body>
 
-  <!-- Encabezado -->
-  <header class="blk-b1">
-    <a class="logo-link" href="./index.html" aria-label="Volver al inicio">
-      <img
-        src="./assets/img/logo.png"
-        alt="Logo de AgroVoltz"
-        class="logo"
-      >
+<!-- SVG sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7C8 8 5.5 11 5.5 14.5a6.5 6.5 0 0 0 13 0C18.5 11 16 8 12 2.7z"/></symbol>
+  <symbol id="i-bat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="18" height="10" rx="2"/><path d="M22 11v2M6 10v4M10 10v4M14 10v4"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-7"/><path d="M16 7h4v4"/></symbol>
+  <symbol id="i-tomato" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="14" r="7.5"/><path d="M12 6.5V3M8 7l4 2 4-2M9 5.5L12 7l3-1.5"/></symbol>
+  <symbol id="i-school" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c3 2.5 9 2.5 12 0v-4.5"/></symbol>
+  <symbol id="i-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.1L3 17.7 6.3 21l6.3-6.3a4 4 0 0 0 5.1-5.4L15 12l-3-3z"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./index.html" aria-label="AgroVoltz, volver al inicio">
+      <img src="./assets/img/logo.png" alt="" class="brand-logo">
+      <span>AgroVoltz</span>
     </a>
-
-    <nav class="blk-b3">
-      <a class="blk-b4" href="#">Features</a>
-      <a class="blk-b5" href="#">Pricing</a>
-      <a class="blk-b6" href="#">About</a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#casos">Casos de éxito</a></li>
+        <li><a class="btn btn-primary btn-sm" href="#contacto">Cotizar</a></li>
+      </ul>
     </nav>
+  </div>
+</header>
 
-    <button class="blk-b7" type="button">Get Started</button>
-  </header>
-
-  <!-- Sección principal -->
-  <section class="blk-b8">
-    <h1 class="blk-b9">
-      Build Responsive Landing Pages in Minutes
-    </h1>
-
-    <p class="blk-b10">
-      Drag, drop, and customize sections to create a working page
-      without writing code from scratch.
-    </p>
-
-    <div class="blk-b11">
-      <button class="blk-b12" type="button">
-        Get Started Free
-      </button>
-
-      <button class="blk-b13" type="button">
-        Learn More
-      </button>
+<main id="inicio">
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Optimiza el riego de tus cultivos de tomate y <em>reduce tus costos de energía hasta un 40%</em></h1>
+      <p class="sub">Gestión inteligente que integra paneles solares, baterías y red eléctrica para garantizar bombeo continuo de agua al menor costo operativo.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#contacto">Solicitar Demostración Gratis</a>
+        <a class="btn btn-ghost" href="#casos">Ver Caso de Éxito</a>
+      </div>
     </div>
-  </section>
 
-  <!-- Características -->
-  <section class="blk-b14">
-    <h2 class="blk-b15">Everything you need</h2>
-
-    <div class="blk-b16">
-
-      <article class="blk-b17">
-        <h3 class="blk-b18">Fast</h3>
-        <p class="blk-b19">
-          Every section is built with lightweight markup and no
-          runtime dependencies.
-        </p>
-      </article>
-
-      <article class="blk-b20">
-        <h3 class="blk-b21">Responsive</h3>
-        <p class="blk-b22">
-          Grid and flex layouts reflow automatically across breakpoints.
-        </p>
-      </article>
-
-      <article class="blk-b23">
-        <h3 class="blk-b24">Customizable</h3>
-        <p class="blk-b25">
-          Adjust color, spacing, and typography from the property panel.
-        </p>
-      </article>
-
+    <div class="scene" role="img" aria-label="Paneles solares junto a un cultivo de tomates con indicadores de energía y riego">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFE3F6"/><stop offset="1" stop-color="#F4FAF1"/></linearGradient>
+          <linearGradient id="pv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0D47A1"/><stop offset="1" stop-color="#1976D2"/></linearGradient>
+          <g id="plant">
+            <path d="M0 0v-46" stroke="#1B5E20" stroke-width="4" stroke-linecap="round"/>
+            <path d="M0-30c-16-2-20-14-20-14 12-2 20 4 20 14zM0-38c16-2 20-14 20-14-12-2-20 4-20 14z" fill="#43A047"/>
+            <circle cx="-9" cy="-14" r="8" fill="#E53935"/><circle cx="9" cy="-22" r="7" fill="#D32F2F"/><circle cx="-7" cy="-31" r="5.5" fill="#EF5350"/>
+          </g>
+        </defs>
+        <rect width="560" height="440" fill="url(#sky)"/>
+        <circle cx="90" cy="70" r="34" fill="#FBC02D"/>
+        <g stroke="#FBC02D" stroke-width="5" stroke-linecap="round"><path d="M90 16v-8M90 124v8M36 70h-8M144 70h8M52 32l-6-6M128 108l6 6M52 108l-6 6M128 32l6-6"/></g>
+        <path d="M0 215c120-30 300-30 560 0v225H0z" fill="#C8E6C9"/>
+        <!-- paneles -->
+        <g>
+          <g transform="translate(250 110)">
+            <path d="M0 78l30-62h120l-30 62z" fill="url(#pv)" stroke="#E3F2FD" stroke-width="2"/>
+            <path d="M40 78l30-62M80 78l30-62M10 58h130M20 37h130" stroke="#90CAF9" stroke-width="1.5"/>
+            <path d="M60 78v28M100 78v28M45 106h70" stroke="#546E7A" stroke-width="4"/>
+          </g>
+          <g transform="translate(405 96)">
+            <path d="M0 78l30-62h120l-30 62z" fill="url(#pv)" stroke="#E3F2FD" stroke-width="2"/>
+            <path d="M40 78l30-62M80 78l30-62M10 58h130M20 37h130" stroke="#90CAF9" stroke-width="1.5"/>
+            <path d="M60 78v28M100 78v28M45 106h70" stroke="#546E7A" stroke-width="4"/>
+          </g>
+        </g>
+        <!-- surcos -->
+        <g fill="#8D6E63"><path d="M-10 300l600-0v14H-10z" opacity=".0"/></g>
+        <path d="M0 262h560v22H0z" fill="#6D4C41"/><path d="M0 312h560v26H0z" fill="#6D4C41"/><path d="M0 366h560v30H0z" fill="#6D4C41"/>
+        <path d="M0 273h560" stroke="#0288D1" stroke-width="3" stroke-dasharray="3 9" stroke-linecap="round"/>
+        <path d="M0 325h560" stroke="#0288D1" stroke-width="3" stroke-dasharray="3 9" stroke-linecap="round"/>
+        <path d="M0 381h560" stroke="#0288D1" stroke-width="3" stroke-dasharray="3 9" stroke-linecap="round"/>
+        <g transform="translate(0 276)"><use href="#plant" x="40"/><use href="#plant" x="130"/><use href="#plant" x="220"/><use href="#plant" x="310"/><use href="#plant" x="400"/><use href="#plant" x="490"/></g>
+        <g transform="translate(0 330)"><use href="#plant" x="85"/><use href="#plant" x="175"/><use href="#plant" x="265"/><use href="#plant" x="355"/><use href="#plant" x="445"/></g>
+        <g transform="translate(0 388)"><use href="#plant" x="40"/><use href="#plant" x="130"/><use href="#plant" x="220"/><use href="#plant" x="310"/><use href="#plant" x="400"/><use href="#plant" x="490"/></g>
+        <!-- caseta de control -->
+        <rect x="190" y="204" width="46" height="46" rx="6" fill="#ECEFF1" stroke="#546E7A" stroke-width="3"/>
+        <path d="M216 214l-9 14h7l-3 14 11-17h-7z" fill="#FBC02D"/>
+      </svg>
+      <div class="chip c1"><svg class="icon" style="color:var(--solar-yellow)"><use href="#i-sun"/></svg><div>Solar activo<b>3,8 kW</b></div></div>
+      <div class="chip c2"><svg class="icon" style="color:var(--primary-green)"><use href="#i-bat"/></svg><div>Batería<b>86%</b></div></div>
+      <div class="chip c3"><svg class="icon" style="color:var(--water-blue)"><use href="#i-drop"/></svg><div><span style="display:flex;align-items:center;gap:.4rem"><span class="pulse"></span>Riego en curso</span><b>Sin cortes</b></div></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Testimonio -->
-  <section class="blk-b26">
-    <p class="blk-b27">
-      This tool saved us weeks of front end work on our last launch.
-    </p>
+<!-- 4. BENEFICIOS / ROI -->
+<section id="beneficios">
+  <div class="wrap">
+    <div class="head">
+      <h2>Beneficios que se miden en tu boleta y en tu cosecha</h2>
+      <p>Toca cada tarjeta para ver cómo se logra el resultado.</p>
+    </div>
+    <div class="grid4">
+      <article class="roi">
+        <svg class="icon" style="color:#B58900;width:2rem;height:2rem"><use href="#i-sun"/></svg>
+        <div class="big">45%<small> menos</small></div>
+        <h3>Ahorro energético directo</h3>
+        <p>Hasta 45% de reducción en el costo eléctrico mensual mediante el aprovechamiento prioritario de energía solar.</p>
+        <button type="button" aria-expanded="false">Cómo se logra</button>
+        <div class="more"><div><p>El sistema usa primero la energía de los paneles, luego la batería y deja la red eléctrica como último respaldo.</p></div></div>
+      </article>
+      <article class="roi">
+        <svg class="icon" style="color:var(--water-blue);width:2rem;height:2rem"><use href="#i-bat"/></svg>
+        <div class="big">100%<small> continuidad</small></div>
+        <h3>Cero interrupciones de riego</h3>
+        <p>100% de continuidad operativa en bombeo gracias a la conmutación automática con banco de baterías ante cortes de red.</p>
+        <button type="button" aria-expanded="false">Cómo se logra</button>
+        <div class="more"><div><p>Si la red cae o baja la tensión, el sistema cambia de fuente en forma automática y la bomba sigue funcionando.</p></div></div>
+      </article>
+      <article class="roi">
+        <svg class="icon" style="color:var(--primary-green);width:2rem;height:2rem"><use href="#i-chart"/></svg>
+        <div class="big">18–24<small> meses</small></div>
+        <h3>Retorno de inversión (ROI)</h3>
+        <p>Recuperación de la inversión estimada entre 18 y 24 meses por ahorro en insumos y aumento del rendimiento por hectárea.</p>
+        <button type="button" aria-expanded="false">Cómo se logra</button>
+        <div class="more"><div><p>Suma el ahorro en electricidad y combustible del generador con el mayor rendimiento por riego sin interrupciones. El plazo exacto depende de tu predio y se calcula en la cotización.</p></div></div>
+      </article>
+      <article class="roi">
+        <svg class="icon" style="color:var(--red-tomato);width:2rem;height:2rem"><use href="#i-tomato"/></svg>
+        <div class="big">0%<small> estrés hídrico</small></div>
+        <h3>Protección del cultivo</h3>
+        <p>Evita el estrés hídrico en la planta de tomate, resguardando la calidad, calibre y valor de mercado del fruto.</p>
+        <button type="button" aria-expanded="false">Cómo se logra</button>
+        <div class="more"><div><p>El riego se mantiene en los horarios programados aunque falle la red, así la planta recibe agua cuando la necesita.</p></div></div>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <p class="blk-b28">
-      Happy Customer, Company Name
-    </p>
-  </section>
+<!-- 5. CASOS DE ÉXITO -->
+<section class="proof" id="casos">
+  <div class="wrap">
+    <div>
+      <blockquote>Con AgroVoltz logramos asegurar el bombeo constante en nuestras 3 hectáreas de tomate sin sufrir por las alzas de la tarifa eléctrica ni las caídas de tensión rurales. El sistema se paga solo con el ahorro generado.</blockquote>
+      <cite><strong>Carlos M.</strong>, Productor de Tomate, Sector Agrícola Central.</cite>
+      <div class="valid">
+        <svg class="icon"><use href="#i-school"/></svg>
+        <p style="margin:0">Validado técnicamente mediante pruebas de laboratorio y entrevistas con expertos agrónomos de la Universidad de Chile (FCFM).</p>
+      </div>
+    </div>
+    <div class="badges">
+      <div class="badge"><b>+4</b><span>Hectáreas protegidas</span></div>
+      <div class="badge"><b>100%</b><span>Autonomía en cortes</span></div>
+      <div class="badge"><b>0%</b><span>Estrés hídrico</span></div>
+    </div>
+  </div>
+</section>
 
-  <!-- Llamado a la acción -->
-  <section class="blk-b29">
-    <h2 class="blk-b30">Ready to get started?</h2>
+<!-- 7. CONTACTO -->
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <div>
+      <h2>¿Listo para reducir el gasto energético de tu campo y proteger tu cosecha de tomates?</h2>
+      <div class="guarantee">
+        <svg class="icon"><use href="#i-tool"/></svg>
+        <p style="margin:0">Incluye asesoría técnica personalizada en terreno, instalación modular y capacitación de uso.</p>
+      </div>
+    </div>
+    <form id="lead" novalidate>
+      <div><label for="nombre">Nombre y apellido</label><input id="nombre" name="nombre" autocomplete="name" required><div class="err"></div></div>
+      <div><label for="tel">Teléfono / WhatsApp</label><input id="tel" name="tel" type="tel" autocomplete="tel" placeholder="+56 9 1234 5678" required><div class="err"></div></div>
+      <div><label for="ubic">Ubicación / Región</label><input id="ubic" name="ubic" autocomplete="address-level1" placeholder="Ej: Región de O'Higgins" required><div class="err"></div></div>
+      <div><label for="sup">Superficie del cultivo</label>
+        <select id="sup" name="sup" required>
+          <option value="">Selecciona una opción</option>
+          <option>Menos de 1 ha</option><option>1 a 4 ha</option><option>Más de 4 ha</option>
+        </select><div class="err"></div></div>
+      <button class="btn btn-primary" type="submit">Cotizar Mi Proyecto AgroVoltz</button>
+      <div class="ok" id="ok" role="status">¡Gracias! Recibimos tus datos y te contactaremos para coordinar la cotización.</div>
+    </form>
+  </div>
+</section>
+</main>
 
-    <button class="blk-b31" type="button">
-      Start Building
-    </button>
-  </section>
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand footer-brand" href="./index.html" aria-label="AgroVoltz, volver al inicio"><img src="./assets/img/logo.png" alt="" class="brand-logo"><span>AgroVoltz</span></a>
+      <p>Equipo AgroVoltz: ingeniería y agronomía para llevar energía solar confiable al riego de tomate en predios de hasta 4 hectáreas.</p>
+    </div>
+    <div><h3>Navegación</h3><ul><li><a href="#inicio">Inicio</a></li><li><a href="#beneficios">Beneficios</a></li><li><a href="#casos">Casos de éxito</a></li><li><a href="#contacto">Contacto</a></li></ul></div>
+    <div><h3>Proyecto</h3><ul><li>Gestión solar + baterías + red</li><li>Validación FCFM, U. de Chile</li><li>Asesoría en terreno</li></ul></div>
+    <p class="legal">© <span id="yr">2026</span> AgroVoltz. Todos los derechos reservados.</p>
+  </div>
+</footer>
 
-  <!-- Pie de página -->
-  <footer class="blk-b32">
-    <p class="blk-b33">
-      Copyright 2026 AgroVoltz. All rights reserved.
-    </p>
+<script>
+(function(){
+  // Tarjetas ROI expandibles
+  document.querySelectorAll('.roi button').forEach(function(b){
+    b.addEventListener('click',function(){
+      var card=b.closest('.roi'), open=card.classList.toggle('open');
+      b.setAttribute('aria-expanded',open);
+      b.textContent=open?'Ocultar':'Cómo se logra';
+    });
+  });
+  document.getElementById('yr').textContent=new Date().getFullYear();
 
-    <nav class="blk-b34">
-      <a class="blk-b35" href="#">Privacy</a>
-      <a class="blk-b36" href="#">Terms</a>
-      <a class="blk-b37" href="#">Contact</a>
-    </nav>
-  </footer>
-
+  // Validación del formulario
+  var form=document.getElementById('lead'), ok=document.getElementById('ok');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var valid=true;
+    form.querySelectorAll('[required]').forEach(function(f){
+      var msg='', v=f.value.trim();
+      if(!v) msg='Completa este campo.';
+      else if(f.type==='tel' && v.replace(/\D/g,'').length<8) msg='Ingresa un teléfono válido.';
+      f.setAttribute('aria-invalid',msg?'true':'false');
+      f.parentElement.querySelector('.err').textContent=msg;
+      if(msg) valid=false;
+    });
+    if(!valid){ form.querySelector('[aria-invalid="true"]').focus(); return; }
+    /* Conecta aquí tu backend, p. ej.: fetch('/api/leads',{method:'POST',body:new FormData(form)}) */
+    ok.classList.add('show'); form.reset();
+  });
+})();
+</script>
 </body>
 </html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de ahorro | AgroVoltz</title>
+</head>
+<body>
+
+<!-- Logo para volver al inicio -->
+<a class="volver-inicio" href="./index.html" aria-label="AgroVoltz, volver al inicio">
+  <img src="./assets/img/logo.png" alt="AgroVoltz">
+</a>
+<style>
+  .volver-inicio {
+    display: block;
+    width: fit-content;
+    max-width: 620px;
+    margin: 24px auto 0;
+  }
+  .volver-inicio img {
+    display: block;
+    height: 48px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+  }
+  .volver-inicio:focus-visible {
+    outline: 3px solid #a5c9a8;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+</style>
+
+<section class="sunport-calculator">
+  <div class="sunport-header">
+    <span class="sunport-tag">SUNPORT+ · AGRICULTURA INTELIGENTE</span>
+    <h2>¿Cuánto podrías ahorrar?</h2>
+    <p>
+      Calcula tu ahorro potencial en energía para el riego
+      y descubre cómo Sunport+ podría ayudarte a optimizar tus recursos.
+    </p>
+  </div>
+
+  <div class="sunport-form">
+    <label for="sunport-expense">
+      Gasto mensual en energía para el bombeo
+    </label>
+    <div class="sunport-input-wrap">
+      <span>$</span>
+      <input
+        id="sunport-expense"
+        type="number"
+        min="0"
+        step="1000"
+        value="150000"
+        placeholder="150000"
+      />
+      <span class="sunport-currency">CLP</span>
+    </div>
+
+    <div class="sunport-slider-heading">
+      <label for="sunport-rate">Escenario de ahorro supuesto</label>
+      <strong id="sunport-rate-label">10%</strong>
+    </div>
+
+    <input
+      id="sunport-rate"
+      type="range"
+      min="5"
+      max="30"
+      step="5"
+      value="10"
+    />
+
+    <div class="sunport-range-labels">
+      <span>5%</span>
+      <span>15%</span>
+      <span>30%</span>
+    </div>
+    <p class="sunport-hint">
+      Ajusta el porcentaje para explorar distintos escenarios.
+    </p>
+  </div>
+
+  <div class="sunport-results" aria-live="polite">
+    <p class="sunport-result-label">Tu ahorro potencial estimado</p>
+    <div class="sunport-main-result">
+      <span id="sunport-monthly">$15.000</span>
+      <small>CLP / mes</small>
+    </div>
+
+    <div class="sunport-result-grid">
+      <div>
+        <p>Ahorro anual</p>
+        <strong id="sunport-yearly">$180.000</strong>
+      </div>
+      <div>
+        <p>Gasto mensual restante</p>
+        <strong id="sunport-remaining">$135.000</strong>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" id="sunport-copy" class="sunport-button">
+    Copiar resultados
+  </button>
+
+  <p class="sunport-disclaimer">
+    Esta calculadora presenta simulaciones ilustrativas, no ahorros
+    comprobados de Sunport+. El resultado real dependerá del consumo
+    energético, las condiciones del cultivo y el sistema instalado.
+  </p>
+</section>
+
+<style>
+  .sunport-calculator {
+    --sun-green: #245c3a;
+    --sun-light: #eaf2e8;
+    --sun-text: #23352a;
+    max-width: 620px;
+    margin: 32px auto;
+    padding: 32px;
+    border: 1px solid #dce6da;
+    border-radius: 24px;
+    background: #fff;
+    color: var(--sun-text);
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    box-shadow: 0 12px 36px rgba(28, 65, 40, 0.08);
+  }
+
+  .sunport-calculator * {
+    box-sizing: border-box;
+  }
+
+  .sunport-tag {
+    color: var(--sun-green);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+  }
+
+  .sunport-header h2 {
+    margin: 14px 0 10px;
+    font-size: clamp(27px, 5vw, 36px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+  }
+
+  .sunport-header p {
+    margin: 0;
+    color: #66736a;
+    line-height: 1.6;
+    font-size: 15px;
+  }
+
+  .sunport-form {
+    margin-top: 28px;
+  }
+
+  .sunport-form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .sunport-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #cbd8cb;
+    border-radius: 12px;
+    padding: 0 14px;
+    height: 54px;
+  }
+
+  .sunport-input-wrap input {
+    min-width: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: var(--sun-text);
+    font: inherit;
+    font-size: 18px;
+  }
+
+  .sunport-currency {
+    color: #78847b;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .sunport-slider-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .sunport-slider-heading label {
+    margin: 0;
+  }
+
+  .sunport-slider-heading strong {
+    color: var(--sun-green);
+    font-size: 22px;
+  }
+
+  #sunport-rate {
+    display: block;
+    width: 100%;
+    margin: 20px 0 8px;
+    accent-color: var(--sun-green);
+    cursor: pointer;
+  }
+
+  .sunport-range-labels {
+    display: flex;
+    justify-content: space-between;
+    color: #78847b;
+    font-size: 12px;
+  }
+
+  .sunport-hint {
+    margin: 12px 0 0;
+    font-size: 12px;
+    color: #78847b;
+    line-height: 1.5;
+  }
+
+  .sunport-results {
+    margin-top: 26px;
+    padding: 24px;
+    border-radius: 18px;
+    background: var(--sun-light);
+  }
+
+  .sunport-result-label {
+    margin: 0 0 12px;
+    color: #4e6955;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .sunport-main-result {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: var(--sun-green);
+  }
+
+  .sunport-main-result span {
+    font-size: clamp(30px, 6vw, 42px);
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    overflow-wrap: anywhere;
+  }
+
+  .sunport-main-result small {
+    font-size: 13px;
+  }
+
+  .sunport-result-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    border-top: 1px solid #cbdcc9;
+    margin-top: 22px;
+    padding-top: 18px;
+  }
+
+  .sunport-result-grid p {
+    margin: 0 0 7px;
+    color: #5c7160;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .sunport-result-grid strong {
+    display: block;
+    font-size: clamp(16px, 3vw, 21px);
+    overflow-wrap: anywhere;
+    color: #233f2b;
+  }
+
+  .sunport-button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 12px;
+    background: var(--sun-green);
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .sunport-button:hover {
+    background: #19472b;
+    transform: translateY(-1px);
+  }
+
+  .sunport-button:focus-visible,
+  .sunport-input-wrap:focus-within {
+    outline: 3px solid #a5c9a8;
+    outline-offset: 3px;
+  }
+
+  .sunport-disclaimer {
+    margin: 18px 0 0;
+    color: #78847b;
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 480px) {
+    .sunport-calculator {
+      padding: 22px;
+      border-radius: 18px;
+    }
+
+    .sunport-results {
+      padding: 18px;
+    }
+
+    .sunport-result-grid {
+      gap: 12px;
+    }
+  }
+</style>
+
+<script>
+  (() => {
+    const expenseInput = document.getElementById("sunport-expense");
+    const rateInput = document.getElementById("sunport-rate");
+    const rateLabel = document.getElementById("sunport-rate-label");
+    const monthlyOutput = document.getElementById("sunport-monthly");
+    const yearlyOutput = document.getElementById("sunport-yearly");
+    const remainingOutput = document.getElementById("sunport-remaining");
+    const copyButton = document.getElementById("sunport-copy");
+
+    if (!expenseInput || !rateInput || !copyButton) return;
+
+    const money = value =>
+      "$" + Math.round(value).toLocaleString("es-CL");
+
+    function updateCalculator() {
+      const expense = Math.max(0, Number(expenseInput.value) || 0);
+      const rate = Number(rateInput.value);
+      const monthlySaving = expense * rate / 100;
+
+      rateLabel.textContent = rate + "%";
+      monthlyOutput.textContent = money(monthlySaving);
+      yearlyOutput.textContent = money(monthlySaving * 12);
+      remainingOutput.textContent = money(expense - monthlySaving);
+    }
+
+    expenseInput.addEventListener("input", updateCalculator);
+    rateInput.addEventListener("input", updateCalculator);
+
+    copyButton.addEventListener("click", async () => {
+      const expense = Math.max(0, Number(expenseInput.value) || 0);
+      const rate = Number(rateInput.value);
+      const saving = expense * rate / 100;
+
+      const report = [
+        "Sunport+ — Simulación de ahorro",
+        "Gasto mensual actual: " + money(expense) + " CLP",
+        "Escenario supuesto: " + rate + "%",
+        "Ahorro mensual estimado: " + money(saving) + " CLP",
+        "Ahorro anual estimado: " + money(saving * 12) + " CLP",
+        "Nota: simulación ilustrativa, no resultado medido."
+      ].join("\n");
+
+      try {
+        await navigator.clipboard.writeText(report);
+        copyButton.textContent = "¡Resultados copiados!";
+      } catch (error) {
+        copyButton.textContent =
+          "No se pudo copiar; selecciona los resultados manualmente";
+      }
+
+      setTimeout(() => {
+        copyButton.textContent = "Copiar resultados";
+      }, 2500);
+    });
+
+    updateCalculator();
+  })();
+</script>
+</body>
+</html>

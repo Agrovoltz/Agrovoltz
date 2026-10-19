@@ -21,6 +21,14 @@
   <symbol id="i-tomato" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="14" r="7.5"/><path d="M12 6.5V3M8 7l4 2 4-2M9 5.5L12 7l3-1.5"/></symbol>
   <symbol id="i-school" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c3 2.5 9 2.5 12 0v-4.5"/></symbol>
   <symbol id="i-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.1L3 17.7 6.3 21l6.3-6.3a4 4 0 0 0 5.1-5.4L15 12l-3-3z"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 8 3 8H3s3-1 3-8"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></symbol>
+  <symbol id="i-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h14v4"/><path d="M3 7v11a2 2 0 0 0 2 2h16V9H5a2 2 0 0 1-2-2z"/><circle cx="17" cy="14.5" r="1"/></symbol>
+  <symbol id="i-plug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6M15 2v6M6 8h12v4a6 6 0 0 1-12 0zM12 18v4"/></symbol>
+  <symbol id="i-expand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v6H4zM14 14h6v6h-6zM14 4h6v6h-6zM4 14h6v6H4z"/></symbol>
+  <symbol id="i-quote" viewBox="0 0 24 24" fill="currentColor"><path d="M4 17c0-5 2-9 6-11l1 2c-2 1-3 3-3 5h3v7H4zm10 0c0-5 2-9 6-11l1 2c-2 1-3 3-3 5h3v7h-7z"/></symbol>
 </svg>
 
 <header class="top">
@@ -31,8 +39,12 @@
     </a>
     <nav aria-label="Principal">
       <ul>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#problema">El problema</a></li>
+        <li><a href="#solucion">Solución</a></li>
         <li><a href="#beneficios">Beneficios</a></li>
-        <li><a href="#casos">Casos de éxito</a></li>
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#casos">Expertos</a></li>
         <li><a class="btn btn-primary btn-sm" href="#contacto">Cotizar</a></li>
       </ul>
     </nav>
@@ -40,15 +52,16 @@
 </header>
 
 <main id="inicio">
+
 <!-- 1. HERO -->
 <section class="hero">
   <div class="wrap">
     <div>
-      <h1>Optimiza el riego de tus cultivos de tomate y <em>reduce tus costos de energía hasta un 40%</em></h1>
+      <h1>Optimiza el riego de tus cultivos y <em>reduce tus costos de energía hasta un 40%</em></h1>
       <p class="sub">Gestión inteligente que integra paneles solares, baterías y red eléctrica para garantizar bombeo continuo de agua al menor costo operativo.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#contacto">Solicitar Demostración Gratis</a>
-        <a class="btn btn-ghost" href="#casos">Ver Caso de Éxito</a>
+        <a class="btn btn-ghost" href="#casos">Ver lo que dicen los Expertos</a>
       </div>
     </div>
 
@@ -100,70 +113,231 @@
   </div>
 </section>
 
-<!-- 4. BENEFICIOS / ROI -->
-<section id="beneficios">
+<!-- 2. SOBRE NOSOTROS -->
+<section class="about" id="nosotros">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Sobre nosotros</span>
+      <h2>Empezamos con tomates. Queremos llegar a todos los cultivos.</h2>
+      <p>AgroVoltz nació enfocado en ayudar a pequeños y medianos productores de tomate a optimizar el riego, detectar fallas y aprovechar la energía solar.</p>
+      <p>Durante nuestra investigación comprendimos que estos desafíos también afectan a otros cultivos. Por eso ampliamos nuestra visión hacia una solución modular y adaptable a las necesidades de distintos agricultores.</p>
+    </div>
+    <aside class="vision">
+      <div class="vision-icons" aria-hidden="true">
+        <svg class="icon" style="color:var(--solar-yellow)"><use href="#i-sun"/></svg>
+        <svg class="icon" style="color:var(--water-blue)"><use href="#i-drop"/></svg>
+        <svg class="icon" style="color:var(--primary-green)"><use href="#i-pulse"/></svg>
+      </div>
+      <h3>Nuestra visión</h3>
+      <p>Conectar energía, agua e información para impulsar una agricultura más eficiente y accesible.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- 3. EL PROBLEMA -->
+<section class="problem" id="problema">
   <div class="wrap">
     <div class="head">
-      <h2>Beneficios que se miden en tu boleta y en tu cosecha</h2>
-      <p>Toca cada tarjeta para ver cómo se logra el resultado.</p>
+      <h2>Conocemos tu realidad en el campo</h2>
+      <p>Sabemos que mantener la rentabilidad de tus cultivos de tomate es cada vez más difícil. Los márgenes son estrechos y los problemas diarios con el sistema de riego consumen tu tiempo y tus ganancias.</p>
+    </div>
+    <div class="grid3">
+      <article class="pcard">
+        <svg class="icon" style="color:var(--solar-yellow)"><use href="#i-bolt"/></svg>
+        <h3>Cuentas de energía que asfixian</h3>
+        <p>El bombeo de agua con electricidad o diésel se lleva entre el 15% y el 30% de tus costos totales de producción.</p>
+      </article>
+      <article class="pcard">
+        <svg class="icon" style="color:var(--water-blue)"><use href="#i-search"/></svg>
+        <h3>Tiempo y esfuerzo perdidos buscando fallas</h3>
+        <p>Horas caminando por el predio tratando de adivinar en qué sector está la fuga de agua o el gotero tapado.</p>
+      </article>
+      <article class="pcard">
+        <svg class="icon" style="color:var(--primary-green)"><use href="#i-wallet"/></svg>
+        <h3>Tecnología inalcanzable y compleja</h3>
+        <p>Miedo a endeudarse con equipos solares carísimos, trámites de subsidios confusos y la sensación de que “uno sabe de tierra, no de paneles”.</p>
+      </article>
+      <article class="pcard">
+        <svg class="icon" style="color:var(--red-tomato)"><use href="#i-plug"/></svg>
+        <h3>Incertidumbre por cortes de luz</h3>
+        <p>El riego se detiene por las constantes variaciones de voltaje y cortes en la red eléctrica rural, poniendo en riesgo la hidratación del cultivo.</p>
+      </article>
+      <article class="pcard">
+        <svg class="icon" style="color:var(--dark-green)"><use href="#i-expand"/></svg>
+        <h3>Miedo a sacrificar espacio</h3>
+        <p>La preocupación de que instalar nuevas tecnologías signifique perder metros cuadrados de terreno cultivable.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 4. LA SOLUCIÓN -->
+<section class="solution" id="solucion">
+  <div class="wrap">
+    <div class="head">
+      <h2>AgroVoltz, tecnología que se adapta a tu predio</h2>
+      <p>Nuestros pilares.</p>
+    </div>
+    <div class="pillars">
+      <article class="pillar">
+        <span class="num">1</span>
+        <div>
+          <h3>Monitoreo hídrico en tiempo real</h3>
+          <p>Sensores de presión y humedad distribuidos en tu red de goteo vigilan constantemente tus cultivos. Si ocurre una caída de presión por un gotero obstruido o una fuga, el sistema detecta el sector exacto en menos de 5 minutos, evitando que tengas que recorrer todas las hileras de tomates.</p>
+        </div>
+      </article>
+      <article class="pillar">
+        <span class="num">2</span>
+        <div>
+          <h3>Alertas inteligentes (SMS/WhatsApp)</h3>
+          <p>Recibe notificaciones tempranas en tu celular antes de que ocurra una crisis por falta de agua. Además, una interfaz visual tipo semáforo (verde, amarillo, rojo), muy fácil de entender, te permite identificar el problema sin términos técnicos complejos.</p>
+          <div class="semaforo" aria-hidden="true"><i style="background:#43A047"></i><i style="background:var(--solar-yellow)"></i><i style="background:var(--red-tomato)"></i></div>
+        </div>
+      </article>
+      <article class="pillar">
+        <span class="num">3</span>
+        <div>
+          <h3>Bombeo automatizado con energía limpia</h3>
+          <p>El cerebro del sistema usa un controlador con variador de frecuencia que regula automáticamente la operación de tu bomba, según la disponibilidad de energía solar y la demanda hídrica de la planta. Así evitas el sobre-riego basado en suposiciones y optimizas cada gota.</p>
+        </div>
+      </article>
+      <article class="pillar">
+        <span class="num">4</span>
+        <div>
+          <h3>Energía modular y continua</h3>
+          <p>Integramos energía solar fotovoltaica con un sistema de respaldo (baterías/red) para que el riego no se detenga por cortes o variaciones de voltaje rural. Todo en un diseño compacto que no sacrifica ni un metro de tu suelo cultivable.</p>
+        </div>
+      </article>
+      <article class="pillar">
+        <span class="num">5</span>
+        <div>
+          <h3>Acceso y acompañamiento garantizado</h3>
+          <p>No necesitas $10 millones ni endeudarte para empezar. AgroVoltz funciona con paquetes modulares escalables e incluye capacitación en terreno y servicio técnico de posventa para que nunca estés solo si el equipo falla.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 5. BENEFICIOS CUANTIFICABLES -->
+<section class="benefits" id="beneficios">
+  <div class="wrap">
+    <div class="head">
+      <h2>Beneficios cuantificables</h2>
+      <p>Toca cada tarjeta para ver cómo se logra el resultado y qué significa cada cifra.</p>
     </div>
     <div class="grid4">
       <article class="roi">
         <svg class="icon" style="color:#B58900;width:2rem;height:2rem"><use href="#i-sun"/></svg>
-        <div class="big">45%<small> menos</small></div>
-        <h3>Ahorro energético directo</h3>
-        <p>Hasta 45% de reducción en el costo eléctrico mensual mediante el aprovechamiento prioritario de energía solar.</p>
+        <div class="big">10–40%<small> del costo</small></div>
+        <h3>Reduce la dependencia eléctrica</h3>
+        <p>AgroVoltz busca reducir el gasto de energía mediante generación fotovoltaica modular.</p>
         <button type="button" aria-expanded="false">Cómo se logra</button>
-        <div class="more"><div><p>El sistema usa primero la energía de los paneles, luego la batería y deja la red eléctrica como último respaldo.</p></div></div>
+        <div class="more"><div><p>El porcentaje corresponde al costo energético identificado en el bombeo, no a un ahorro garantizado por AgroVoltz.</p></div></div>
       </article>
       <article class="roi">
-        <svg class="icon" style="color:var(--water-blue);width:2rem;height:2rem"><use href="#i-bat"/></svg>
-        <div class="big">100%<small> continuidad</small></div>
-        <h3>Cero interrupciones de riego</h3>
-        <p>100% de continuidad operativa en bombeo gracias a la conmutación automática con banco de baterías ante cortes de red.</p>
+        <svg class="icon" style="color:var(--water-blue);width:2rem;height:2rem"><use href="#i-drop"/></svg>
+        <div class="big">20%<small> menos agua</small></div>
+        <h3>Aprovecha mejor cada litro de agua</h3>
+        <p>Contribuye a un uso más eficiente del agua mediante el monitoreo del suelo y la detección temprana de fugas y obstrucciones.</p>
         <button type="button" aria-expanded="false">Cómo se logra</button>
-        <div class="more"><div><p>Si la red cae o baja la tensión, el sistema cambia de fuente en forma automática y la bomba sigue funcionando.</p></div></div>
+        <div class="more"><div><p>El 20% es una referencia, no un resultado medido de AgroVoltz.</p></div></div>
       </article>
       <article class="roi">
-        <svg class="icon" style="color:var(--primary-green);width:2rem;height:2rem"><use href="#i-chart"/></svg>
-        <div class="big">18–24<small> meses</small></div>
-        <h3>Retorno de inversión (ROI)</h3>
-        <p>Recuperación de la inversión estimada entre 18 y 24 meses por ahorro en insumos y aumento del rendimiento por hectárea.</p>
+        <svg class="icon" style="color:var(--red-tomato);width:2rem;height:2rem"><use href="#i-pulse"/></svg>
+        <div class="big">Más control<small>, menos recorridos</small></div>
+        <h3>Detecta fallas antes de que afecten el cultivo</h3>
+        <p>La información de presión, humedad y riego ayuda a identificar sectores con posibles anomalías.</p>
         <button type="button" aria-expanded="false">Cómo se logra</button>
-        <div class="more"><div><p>Suma el ahorro en electricidad y combustible del generador con el mayor rendimiento por riego sin interrupciones. El plazo exacto depende de tu predio y se calcula en la cotización.</p></div></div>
+        <div class="more"><div><p>Facilita la toma de decisiones sin depender exclusivamente de la inspección manual.</p></div></div>
       </article>
       <article class="roi">
-        <svg class="icon" style="color:var(--red-tomato);width:2rem;height:2rem"><use href="#i-tomato"/></svg>
-        <div class="big">0%<small> estrés hídrico</small></div>
-        <h3>Protección del cultivo</h3>
-        <p>Evita el estrés hídrico en la planta de tomate, resguardando la calidad, calibre y valor de mercado del fruto.</p>
+        <svg class="icon" style="color:var(--primary-green);width:2rem;height:2rem"><use href="#i-expand"/></svg>
+        <div class="big">Modular<small> y escalable</small></div>
+        <h3>Tecnología adaptada a cada terreno</h3>
+        <p>Se adapta a las necesidades y posibilidades económicas de pequeños y medianos agricultores.</p>
         <button type="button" aria-expanded="false">Cómo se logra</button>
-        <div class="more"><div><p>El riego se mantiene en los horarios programados aunque falle la red, así la planta recibe agua cuando la necesita.</p></div></div>
+        <div class="more"><div><p>Se incorporan los componentes necesarios según las características de tu predio.</p></div></div>
       </article>
+    </div>
+
+    <!-- Acceso a la calculadora -->
+    <div class="calc-cta">
+      <svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg>
+      <div class="calc-cta-text">
+        <h3>¿Cuánto podrías ahorrar?</h3>
+        <p>Simula tu ahorro potencial en energía para el riego con nuestra calculadora.</p>
+      </div>
+      <a class="btn btn-primary" href="./calcu.html">Ir a la calculadora de ahorro</a>
     </div>
   </div>
 </section>
 
-<!-- 5. CASOS DE ÉXITO -->
+<!-- 6. CÓMO FUNCIONA -->
+<section class="how" id="como-funciona">
+  <div class="wrap">
+    <div class="head">
+      <h2>Diseñado para no interrumpir tu día a día</h2>
+      <p>Sabemos que en el campo el tiempo vale oro. Implementar AgroVoltz es un proceso rápido, guiado y sin complicaciones técnicas.</p>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <span class="stepnum">Paso 1</span>
+        <svg class="icon" style="color:var(--primary-green)"><use href="#i-tool"/></svg>
+        <h3>Instalación modular sin perder terreno</h3>
+        <p>Instalamos los sensores de presión en tus líneas de goteo y ubicamos el módulo de energía (panel y tablero) fuera de tu zona de cultivo: 0 m² de tu superficie cultivable. Además, te capacitamos en terreno para que aprendas a usarlo de inmediato.</p>
+      </li>
+      <li class="step">
+        <span class="stepnum">Paso 2</span>
+        <svg class="icon" style="color:var(--solar-yellow)"><use href="#i-bolt"/></svg>
+        <h3>Monitoreo y gestión energética automática</h3>
+        <p>Mientras tú te enfocas en el cultivo, el sistema analiza constantemente la presión del agua y gestiona de forma inteligente el uso de energía, priorizando la solar sobre la red, para asegurar que el riego no se detenga.</p>
+      </li>
+      <li class="step">
+        <span class="stepnum">Paso 3</span>
+        <svg class="icon" style="color:var(--red-tomato)"><use href="#i-bell"/></svg>
+        <h3>Alertas simples para actuar rápido</h3>
+        <p>Revisas tu panel tipo “semáforo”. Si ves una luz roja, el sistema te indica exactamente en qué sector hay una falla de presión (fuga o bloqueo), y vas directo al problema sin caminar por todo el predio.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 7. LO QUE DICEN LOS EXPERTOS -->
 <section class="proof" id="casos">
   <div class="wrap">
-    <div>
-      <blockquote>Con AgroVoltz logramos asegurar el bombeo constante en nuestras 3 hectáreas de tomate sin sufrir por las alzas de la tarifa eléctrica ni las caídas de tensión rurales. El sistema se paga solo con el ahorro generado.</blockquote>
-      <cite><strong>Carlos M.</strong>, Productor de Tomate, Sector Agrícola Central.</cite>
-      <div class="valid">
-        <svg class="icon"><use href="#i-school"/></svg>
-        <p style="margin:0">Validado técnicamente mediante pruebas de laboratorio y entrevistas con expertos agrónomos de la Universidad de Chile (FCFM).</p>
-      </div>
+    <div class="head">
+      <h2>Lo que dicen los expertos</h2>
+      <p>Desarrollamos nuestra propuesta escuchando a expertos para comprender los desafíos reales del riego y buscar soluciones adaptadas a los agricultores.</p>
     </div>
-    <div class="badges">
-      <div class="badge"><b>+4</b><span>Hectáreas protegidas</span></div>
-      <div class="badge"><b>100%</b><span>Autonomía en cortes</span></div>
-      <div class="badge"><b>0%</b><span>Estrés hídrico</span></div>
+    <div class="quotes">
+      <figure class="qcard">
+        <svg class="icon qmark"><use href="#i-quote"/></svg>
+        <blockquote>Tanto la presión del sistema como los caudales de trabajo pueden ser sujetos de sensores y ayudarían enormemente en la detección de anomalías.</blockquote>
+        <figcaption><strong>Alfonso Calvo</strong><span>Ingeniero agrónomo</span></figcaption>
+        <p class="why">Su experiencia refuerza la importancia del monitoreo para detectar posibles filtraciones y bloqueos.</p>
+      </figure>
+      <figure class="qcard">
+        <svg class="icon qmark"><use href="#i-quote"/></svg>
+        <blockquote>Chile probablemente es uno de los mejores lugares del mundo para generar energía solar. Comparado con muchos países europeos que usan paneles solares, nosotros tenemos muchísimo más potencial.</blockquote>
+        <figcaption><strong>Eduardo Valente</strong><span>Ingeniero civil</span></figcaption>
+        <p class="why">Su perspectiva destaca el potencial de la energía solar en Chile para impulsar un riego más sostenible.</p>
+      </figure>
+      <figure class="qcard">
+        <svg class="icon qmark"><use href="#i-quote"/></svg>
+        <blockquote>Es importante [...] definir el tiempo de riego, la hora de inicio/término y la frecuencia de riego diaria por sector, adaptada al desarrollo y la etapa de crecimiento del tomate.</blockquote>
+        <figcaption><strong>Víctor</strong><span>Experiencia en cultivo de tomates y riego presurizado</span></figcaption>
+        <p class="why">Sus antecedentes destacan la necesidad de adaptar el riego a las condiciones y etapas de cada cultivo.</p>
+      </figure>
+    </div>
+    <div class="valid">
+      <svg class="icon"><use href="#i-school"/></svg>
+      <p style="margin:0">Validado técnicamente mediante pruebas de laboratorio y entrevistas con expertos agrónomos de la Universidad de Chile (FCFM).</p>
     </div>
   </div>
 </section>
 
-<!-- 7. CONTACTO -->
+<!-- 8. CONTACTO -->
 <section class="contact" id="contacto">
   <div class="wrap">
     <div>
@@ -195,7 +369,7 @@
       <a class="brand footer-brand" href="./index.html" aria-label="AgroVoltz, volver al inicio"><img src="./assets/img/logo.png" alt="" class="brand-logo"><span>AgroVoltz</span></a>
       <p>Equipo AgroVoltz: ingeniería y agronomía para llevar energía solar confiable al riego de tomate en predios de hasta 4 hectáreas.</p>
     </div>
-    <div><h3>Navegación</h3><ul><li><a href="#inicio">Inicio</a></li><li><a href="#beneficios">Beneficios</a></li><li><a href="#casos">Casos de éxito</a></li><li><a href="#contacto">Contacto</a></li></ul></div>
+    <div><h3>Navegación</h3><ul><li><a href="#inicio">Inicio</a></li><li><a href="#nosotros">Sobre nosotros</a></li><li><a href="#problema">El problema</a></li><li><a href="#solucion">La solución</a></li><li><a href="#beneficios">Beneficios</a></li><li><a href="#como-funciona">Cómo funciona</a></li><li><a href="#casos">Expertos</a></li><li><a href="#contacto">Contacto</a></li></ul></div>
     <div><h3>Proyecto</h3><ul><li>Gestión solar + baterías + red</li><li>Validación FCFM, U. de Chile</li><li>Asesoría en terreno</li></ul></div>
     <p class="legal">© <span id="yr">2026</span> AgroVoltz. Todos los derechos reservados.</p>
   </div>
@@ -203,7 +377,7 @@
 
 <script>
 (function(){
-  // Tarjetas ROI expandibles
+  // Tarjetas de beneficios expandibles
   document.querySelectorAll('.roi button').forEach(function(b){
     b.addEventListener('click',function(){
       var card=b.closest('.roi'), open=card.classList.toggle('open');

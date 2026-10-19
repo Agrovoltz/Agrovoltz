@@ -28,6 +28,7 @@
   <symbol id="i-wallet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h14v4"/><path d="M3 7v11a2 2 0 0 0 2 2h16V9H5a2 2 0 0 1-2-2z"/><circle cx="17" cy="14.5" r="1"/></symbol>
   <symbol id="i-plug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6M15 2v6M6 8h12v4a6 6 0 0 1-12 0zM12 18v4"/></symbol>
   <symbol id="i-expand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v6H4zM14 14h6v6h-6zM14 4h6v6h-6zM4 14h6v6H4z"/></symbol>
+  <symbol id="i-chip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol>
   <symbol id="i-quote" viewBox="0 0 24 24" fill="currentColor"><path d="M4 17c0-5 2-9 6-11l1 2c-2 1-3 3-3 5h3v7H4zm10 0c0-5 2-9 6-11l1 2c-2 1-3 3-3 5h3v7h-7z"/></symbol>
 </svg>
 
@@ -40,7 +41,7 @@
     <nav aria-label="Principal">
       <ul>
         <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#problema">El problema</a></li>
+        <li><a href="#problema">El Problema</a></li>
         <li><a href="#solucion">Solución</a></li>
         <li><a href="#beneficios">Beneficios</a></li>
         <li><a href="#como-funciona">Cómo funciona</a></li>
@@ -124,7 +125,7 @@
     </div>
     <aside class="vision">
       <div class="vision-icons" aria-hidden="true">
-        <svg class="icon" style="color:var(--solar-yellow)"><use href="#i-sun"/></svg>
+        <svg class="icon" style="color:#B58900"><use href="#i-sun"/></svg>
         <svg class="icon" style="color:var(--water-blue)"><use href="#i-drop"/></svg>
         <svg class="icon" style="color:var(--primary-green)"><use href="#i-pulse"/></svg>
       </div>
@@ -189,9 +190,8 @@
       <article class="pillar">
         <span class="num">2</span>
         <div>
-          <h3>Alertas inteligentes (SMS/WhatsApp)</h3>
-          <p>Recibe notificaciones tempranas en tu celular antes de que ocurra una crisis por falta de agua. Además, una interfaz visual tipo semáforo (verde, amarillo, rojo), muy fácil de entender, te permite identificar el problema sin términos técnicos complejos.</p>
-          <div class="semaforo" aria-hidden="true"><i style="background:#43A047"></i><i style="background:var(--solar-yellow)"></i><i style="background:var(--red-tomato)"></i></div>
+          <h3>Alertas inteligentes</h3>
+          <p>Recibe notificaciones tempranas en una interfaz visual centralizada antes de que ocurra una crisis por falta de agua.</p>
         </div>
       </article>
       <article class="pillar">
@@ -291,19 +291,89 @@
         <span class="stepnum">Paso 2</span>
         <svg class="icon" style="color:var(--solar-yellow)"><use href="#i-bolt"/></svg>
         <h3>Monitoreo y gestión energética automática</h3>
-        <p>Mientras tú te enfocas en el cultivo, el sistema analiza constantemente la presión del agua y gestiona de forma inteligente el uso de energía, priorizando la solar sobre la red, para asegurar que el riego no se detenga.</p>
+        <p>Mientras tú te enfocas en el cultivo, el sistema analiza constantemente la presión del agua y gestiona de forma inteligente el uso de energía, priorizando la solar sobre la red, para asegurar que el riego no se detenga. Todo funciona en modo automático, pero tú siempre puedes tomar el control y manejar el sistema manualmente cuando lo necesites.</p>
       </li>
       <li class="step">
         <span class="stepnum">Paso 3</span>
         <svg class="icon" style="color:var(--red-tomato)"><use href="#i-bell"/></svg>
         <h3>Alertas simples para actuar rápido</h3>
-        <p>Revisas tu panel tipo “semáforo”. Si ves una luz roja, el sistema te indica exactamente en qué sector hay una falla de presión (fuga o bloqueo), y vas directo al problema sin caminar por todo el predio.</p>
+        <p>Revisas tu panel. Si ves una notificación, esta te indicara exactamente en qué sector hay una falla de presión (fuga o bloqueo), y vas directo al problema sin caminar por todo el predio.</p>
       </li>
     </ol>
   </div>
 </section>
 
-<!-- 7. LO QUE DICEN LOS EXPERTOS -->
+<!-- 7. PROTOTIPO -->
+<section class="prototype" id="prototipo">
+  <div class="wrap">
+    <div class="head">
+      <h2>Prototipo y Proximos pasos</h2>
+      <p>Buscamos resolver y mejorar nuestro Proyecto siguiendo estos puntos clave a la hora de Prototipar.</p>
+    </div>
+    <div class="proto-grid">
+
+      <!-- Izquierda: flujo del sistema -->
+      <div class="proto-flow">
+        <article class="pstep">
+          <span class="num">1</span>
+          <div>
+            <h3>Energía y respaldo</h3>
+            <div class="flow">
+              <span class="node"><svg class="icon" style="color:#B58900"><use href="#i-sun"/></svg>Energía solar</span>
+              <span class="sep">+</span>
+              <span class="node"><svg class="icon" style="color:var(--water-blue)"><use href="#i-plug"/></svg>Energía de la red</span>
+              <span class="to">→</span>
+              <span class="node"><svg class="icon" style="color:var(--primary-green)"><use href="#i-bat"/></svg>Baterías</span>
+            </div>
+            <p>Buscamos interconectar el sistema fotovoltaico con la red eléctrica y las baterías. Simulando a pequeña escala el ahorro energético.</p>
+          </div>
+        </article>
+        <article class="pstep">
+          <span class="num">2</span>
+          <div>
+            <h3>Control y medición</h3>
+            <div class="flow">
+              <span class="node"><svg class="icon" style="color:var(--dark-green)"><use href="#i-chip"/></svg>Arduino</span>
+              <span class="to">→</span>
+              <span class="node"><svg class="icon" style="color:var(--red-tomato)"><use href="#i-pulse"/></svg>Sensores de potencia y voltaje</span>
+            </div>
+            <p>Buscamos mejorar la inteligencia e interfaz con el ususario de modo de obtener mejores predicciones sobre las mediciones tomadas.</p>
+          </div>
+        </article>
+        <article class="pstep">
+          <span class="num">3</span>
+          <div>
+            <h3>Extracción de agua y Riego</h3>
+            <div class="flow">
+              <span class="node"><svg class="icon" style="color:var(--water-blue)"><use href="#i-drop"/></svg>Bomba de extracción</span>
+            </div>
+            <p>Buscamos optimizar el proceso de extracción de agua y distribución del riego, asegurando un uso eficiente y sostenible del recurso hídrico mediante la información proporcionada por los sensores.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Derecha: carrusel de imágenes.
+           Tamaño: cambia --g-ancho (ancho máximo) y --g-alto (alto) aquí abajo.
+           Para agregar más fotos, copia un bloque <figure class="g-slide"> -->
+      <div class="gallery" style="--g-ancho:100%; --g-alto:380px;">
+        <div class="g-viewport">
+          <div class="g-track">
+            <figure class="g-slide"><img src="./assets/img/foto1.png" alt="Prototipo AgroVoltz, imagen 1"></figure>
+            <figure class="g-slide"><img src="./assets/img/foto2.png" alt="Prototipo AgroVoltz, imagen 2"></figure>
+            <figure class="g-slide"><img src="./assets/img/foto3.png" alt="Prototipo AgroVoltz, imagen 3"></figure>
+            <figure class="g-slide"><img src="./assets/img/foto4.png" alt="Prototipo AgroVoltz, imagen 4"></figure>
+          </div>
+          <button type="button" class="g-btn g-prev" aria-label="Imagen anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button type="button" class="g-btn g-next" aria-label="Imagen siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+        <div class="g-dots"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 8. LO QUE DICEN LOS EXPERTOS -->
 <section class="proof" id="casos">
   <div class="wrap">
     <div class="head">
@@ -337,7 +407,7 @@
   </div>
 </section>
 
-<!-- 8. CONTACTO -->
+<!-- 9. CONTACTO -->
 <section class="contact" id="contacto">
   <div class="wrap">
     <div>
@@ -369,7 +439,7 @@
       <a class="brand footer-brand" href="./index.html" aria-label="AgroVoltz, volver al inicio"><img src="./assets/img/logo.png" alt="" class="brand-logo"><span>AgroVoltz</span></a>
       <p>Equipo AgroVoltz: ingeniería y agronomía para llevar energía solar confiable al riego de tomate en predios de hasta 4 hectáreas.</p>
     </div>
-    <div><h3>Navegación</h3><ul><li><a href="#inicio">Inicio</a></li><li><a href="#nosotros">Sobre nosotros</a></li><li><a href="#problema">El problema</a></li><li><a href="#solucion">La solución</a></li><li><a href="#beneficios">Beneficios</a></li><li><a href="#como-funciona">Cómo funciona</a></li><li><a href="#casos">Expertos</a></li><li><a href="#contacto">Contacto</a></li></ul></div>
+    <div><h3>Navegación</h3><ul><li><a href="#inicio">Inicio</a></li><li><a href="#nosotros">Sobre nosotros</a></li><li><a href="#problema">El Problema</a></li><li><a href="#solucion">La solución</a></li><li><a href="#beneficios">Beneficios</a></li><li><a href="#como-funciona">Cómo funciona</a></li><li><a href="#casos">Expertos</a></li><li><a href="#contacto">Contacto</a></li></ul></div>
     <div><h3>Proyecto</h3><ul><li>Gestión solar + baterías + red</li><li>Validación FCFM, U. de Chile</li><li>Asesoría en terreno</li></ul></div>
     <p class="legal">© <span id="yr">2026</span> AgroVoltz. Todos los derechos reservados.</p>
   </div>
@@ -403,6 +473,36 @@
     if(!valid){ form.querySelector('[aria-invalid="true"]').focus(); return; }
     /* Conecta aquí tu backend, p. ej.: fetch('/api/leads',{method:'POST',body:new FormData(form)}) */
     ok.classList.add('show'); form.reset();
+  });
+})();
+</script>
+<script>
+(function(){
+  // Carrusel de imágenes del prototipo
+  document.querySelectorAll('.gallery').forEach(function(g){
+    var track=g.querySelector('.g-track'),
+        slides=g.querySelectorAll('.g-slide'),
+        dotsBox=g.querySelector('.g-dots'),
+        n=slides.length, i=0, dots=[];
+    for(var k=0;k<n;k++){
+      (function(k){
+        var d=document.createElement('button');
+        d.type='button'; d.className='g-dot';
+        d.setAttribute('aria-label','Ir a la imagen '+(k+1));
+        d.addEventListener('click',function(){go(k)});
+        dotsBox.appendChild(d); dots.push(d);
+      })(k);
+    }
+    function go(x){
+      i=(x+n)%n;
+      track.style.transform='translateX(-'+(i*100)+'%)';
+      dots.forEach(function(d,j){d.setAttribute('aria-current',j===i?'true':'false')});
+      slides.forEach(function(s,j){s.setAttribute('aria-hidden',j===i?'false':'true')});
+    }
+    g.querySelector('.g-prev').addEventListener('click',function(){go(i-1)});
+    g.querySelector('.g-next').addEventListener('click',function(){go(i+1)});
+    if(n<2){ g.querySelectorAll('.g-btn,.g-dots').forEach(function(e){e.style.display='none'}); }
+    go(0);
   });
 })();
 </script>

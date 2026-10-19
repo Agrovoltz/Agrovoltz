@@ -8,7 +8,8 @@
 <body>
 
 <!-- Logo para volver al inicio -->
-<a class="volver-inicio" href="./index.html" aria-label="AgroVoltz, volver al inicio">
+<a class="volver-inicio" href="./index.html" aria-label="Volver atrás"
+   onclick="if (history.length > 1) { history.back(); return false; }">
   <img src="./assets/img/logo.png" alt="AgroVoltz">
 </a>
 <style>
@@ -20,9 +21,9 @@
   }
   .volver-inicio img {
     display: block;
-    height: 48px;
+    height: 110px;
     width: auto;
-    max-width: 200px;
+    max-width: 700px;
     object-fit: contain;
   }
   .volver-inicio:focus-visible {
